@@ -1,0 +1,68 @@
+<!--
+
+    /**
+    * Created by Pavneet Singh on 05/05/18.
+    * Contact : dev.pavneet@gmail.com
+    */
+-->
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/card_marjin"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    card_view:cardUseCompatPadding="true"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/cardview_default_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/news_image_thumb_width"
+            android:layout_height="@dimen/news_image_thumb_height"
+            android:layout_margin="4dp"
+            android:id="@+id/post_image" />
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/news_image_thumb_height">
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/li_post_title"
+                android:gravity="center_vertical"
+                android:text="@string/n_a"/>
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/li_post_cost"
+                android:gravity="center_vertical"
+                android:text="@string/n_a"/>
+        </LinearLayout>
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_weight="2"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/li_post_desc"
+            android:gravity="center_vertical"
+            android:text="@string/n_a"/>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

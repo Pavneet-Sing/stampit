@@ -1,0 +1,105 @@
+<!--
+
+    /**
+    * Created by Pavneet Singh on 05/05/18.
+    * Contact : dev.pavneet@gmail.com
+    */
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="14dp"
+    tools:context="com.pavneetsingh.android.stampit.ui.posts.fragment.PostAdFragment">
+
+    <TextView
+        android:textSize="@dimen/text_heading"
+        android:textColor="@color/bg_login"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:text="Ad Details" />
+
+    <LinearLayout
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_item"
+            android:layout_weight="0"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/ic_launcher" />
+
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tv_ad_name"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Name" />
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/tv_ad_cost"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price" />
+
+
+
+        <TextView
+            android:layout_marginTop="30dp"
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/tv_ad_location"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location" />
+
+
+        <TextView
+            android:layout_marginTop="30dp"
+
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/tv_ad_desc"
+            android:maxLines="3"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description" />
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorAccent"
+        android:text="OK"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
+
+</LinearLayout>

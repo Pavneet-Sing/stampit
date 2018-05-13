@@ -1,0 +1,17 @@
+<!--
+
+    /**
+    * Created by Pavneet Singh on 05/05/18.
+    * Contact : dev.pavneet@gmail.com
+    */
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.pavneetsingh.android.stampit.ui.login.UserActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>
