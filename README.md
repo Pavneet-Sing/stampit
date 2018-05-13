@@ -12,8 +12,8 @@ which demonstrate the implementations of mvp, dagger, firebase, room, espresso a
 
 Demo
 ----
-![Login and Signup](screenchots/singup_login.gif?raw=true "Login and Signup")
-![addItem](screenchots/add_item.gif?raw=true "add item")
+![Login and Signup](screenshots/signup_login.gif?raw=true "Login and Signup")
+![addItem](screenshots/add_item.gif?raw=true "add item")
 
 Project
 -------
