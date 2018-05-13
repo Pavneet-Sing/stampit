@@ -10,6 +10,11 @@ Brief
 StampIt is an online/offline ad posting application
 which demonstrate the implementations of mvp, dagger, firebase, room, espresso and more.
 
+Demo
+----
+![Login and Signup](screenchots/singup_login.gif?raw=true "Login and Signup")
+![addItem](screenchots/add_item.gif?raw=true "add item")
+
 Project
 -------
 
