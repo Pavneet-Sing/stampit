@@ -81,6 +81,8 @@ public class AdHostActivity extends BaseActivity implements PostAdFragment.OnFra
         if (ActivityHelperClass.PERMISSION_REQUEST == requestCode){
             if (grantResults.length > 0 && ! (grantResults[0] == PackageManager.PERMISSION_GRANTED) && !(grantResults[1] == PackageManager.PERMISSION_GRANTED)) {
                 Toast.makeText(this, "Permissions are required to function this app", Toast.LENGTH_SHORT).show();
+            }else {
+                Toast.makeText(this, "Required permissions to function this app properly", Toast.LENGTH_SHORT).show();
             }
         }
     }

@@ -37,12 +37,10 @@ public final class LoginAndSignUpPresenter<V extends UserLoginContract.View> imp
 
     private void processLoginRequest(String email, String password) {
         view.setProgressBarState(true);
-        Log.e(TAG, "onComplete: "+email+password );
         auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        Log.e(TAG, "onComplete: "+task.getResult().toString() );
                         view.setProgressBarState(false);
                         if (task.isSuccessful()) {
                             view.onSuccess();
