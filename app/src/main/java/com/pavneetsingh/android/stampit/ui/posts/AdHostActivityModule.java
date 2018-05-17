@@ -33,15 +33,24 @@ public abstract class AdHostActivityModule {
     @ContributesAndroidInjector
     abstract PostAdFragment getPostAdsFragment();
 
-    @ActivityScope
-    @Provides
-    static AdListPresenter getPostListPresenter(PostDB postDB, FirebaseDatabase database, FirebaseAuth auth){
-        return new AdListPresenter(postDB,database,auth);
-    }
 
     @ActivityScope
-    @Provides
-    static AdPostPresenter getAdPostPresenter(PostDB postDB, FirebaseDatabase database, FirebaseAuth auth){
-        return new AdPostPresenter(postDB,database,auth);
-    }
+    @Binds
+    abstract  AdListPresenter getPostListPresenter(AdListPresenter adListPresenter);
+
+//    @ActivityScope
+//    @Provides
+//    static AdListPresenter getPostListPresenter(PostDB postDB, FirebaseDatabase database, FirebaseAuth auth){
+//        return new AdListPresenter(postDB,database,auth);
+//    }
+
+//    @ActivityScope
+//    @Provides
+//    static AdPostPresenter getAdPostPresenter(PostDB postDB, FirebaseDatabase database, FirebaseAuth auth){
+//        return new AdPostPresenter(postDB,database,auth);
+//    }
+
+    @ActivityScope
+    @Binds
+    abstract AdPostPresenter getAdPostPresenter(AdPostPresenter adPostPresenter);
 }
